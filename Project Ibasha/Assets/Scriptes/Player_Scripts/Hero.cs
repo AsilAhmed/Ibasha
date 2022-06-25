@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour
 {
-    public float speed = 6f;
-    public float jump_speed = 8f;
+    public float speed = 1f;
+    public float jump_speed = 5f;
     public float timedelay = 0.5f;
     public float Radius;
     public float movement;

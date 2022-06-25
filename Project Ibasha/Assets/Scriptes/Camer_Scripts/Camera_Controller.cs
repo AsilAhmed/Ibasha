@@ -6,7 +6,7 @@ public class Camera_Controller : MonoBehaviour
 {
     // Start is called before the first frame update
     public Transform target;                // This is the targt on which we have to add camera so that camera moves according to the movement of target
-    public float camera_speed = 0.125f;
+    public float camera_speed = 1f;
     public Vector3 offset;
     
     // Update is called once per frame
