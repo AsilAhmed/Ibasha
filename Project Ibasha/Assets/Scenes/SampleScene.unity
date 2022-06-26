@@ -4235,7 +4235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 855b789d54535bc4a9671d15122cb3b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 786162646}
   camera_speed: 0.125
   offset: {x: 0.57, y: 0.65, z: 0}
 --- !u!20 &519420031
@@ -5797,6 +5797,7 @@ GameObject:
   - component: {fileID: 786162645}
   - component: {fileID: 786162644}
   - component: {fileID: 786162643}
+  - component: {fileID: 786162647}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -5959,10 +5960,33 @@ Transform:
   m_LocalPosition: {x: -1.5615308, y: -1.384, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 865287120}
+  - {fileID: 1258435225}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786162647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786162642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abef430f388b51e4088e3ebe834b978a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  jump_speed: 5
+  timedelay: 0.5
+  Radius: 0.5
+  movement: 0
+  groundcheckpoint: {fileID: 1258435225}
+  groundlayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  anim: {fileID: 0}
+  respawn: {x: 0, y: 0, z: 0}
 --- !u!1 &803195954
 GameObject:
   m_ObjectHideFlags: 0
@@ -6321,36 +6345,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &865287119
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 865287120}
-  m_Layer: 0
-  m_Name: GroundCheckpoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &865287120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865287119}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 786162646}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &871387623
 GameObject:
   m_ObjectHideFlags: 0
@@ -8097,6 +8091,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1258435224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1258435225}
+  m_Layer: 0
+  m_Name: GroundCheckpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258435225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258435224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.018, y: -0.228, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 786162646}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1298706836
 GameObject:
   m_ObjectHideFlags: 0
