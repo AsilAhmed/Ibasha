@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: e0536bf4ed3ed0544bb768db6eaa910c
+guid: 2f0dbb1cd7a9b454db8c35f6f2c24cc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -181828907702267046
-    second: Biker_idle_0
+      213: 6474817916930609645
+    second: Punk_idle_0
   - first:
-      213: -5276250086338837625
-    second: Biker_idle_1
+      213: 3800310597756625337
+    second: Punk_idle_1
   - first:
-      213: 1588335839631089550
-    second: Biker_idle_2
+      213: 5867332370219042989
+    second: Punk_idle_2
   - first:
-      213: 3203990619637221514
-    second: Biker_idle_3
+      213: 1194793324445235756
+    second: Punk_idle_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,29 +95,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Biker_idle_0
+      name: Punk_idle_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 0
         y: 0
-        width: 19
-        height: 34
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,20 +113,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a53528262930a7df0800000000000000
-      internalID: -181828907702267046
+      spriteID: de1dbf3279c2bd950800000000000000
+      internalID: 6474817916930609645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biker_idle_1
+      name: Punk_idle_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 48
         y: 0
-        width: 20
-        height: 34
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78346a1508ef6c6b0800000000000000
-      internalID: -5276250086338837625
+      spriteID: 9b1af6f8a5a6db430800000000000000
+      internalID: 3800310597756625337
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biker_idle_2
+      name: Punk_idle_2
       rect:
         serializedVersion: 2
-        x: 99
+        x: 96
         y: 0
-        width: 20
-        height: 34
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f9b31e707ea0610800000000000000
-      internalID: 1588335839631089550
+      spriteID: da88e0a44b3fc6150800000000000000
+      internalID: 5867332370219042989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Biker_idle_3
+      name: Punk_idle_3
       rect:
         serializedVersion: 2
-        x: 148
+        x: 144
         y: 0
-        width: 19
-        height: 34
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a88092b3e7cd67c20800000000000000
-      internalID: 3203990619637221514
+      spriteID: c2af093c232c49010800000000000000
+      internalID: 1194793324445235756
       vertices: []
       indices: 
       edges: []
