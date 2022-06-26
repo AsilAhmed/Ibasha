@@ -4236,8 +4236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1199016233}
-  camera_speed: 0.125
-  offset: {x: 0.57, y: 0.65, z: 0}
+  camera_speed: 0.9
+  offset: {x: 0.7, y: 0.3, z: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -4289,7 +4289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: -1.08, z: -12}
+  m_LocalPosition: {x: -1.16, y: -1.08, z: -15}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
