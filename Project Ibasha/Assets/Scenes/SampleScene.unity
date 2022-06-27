@@ -13855,6 +13855,7 @@ GameObject:
   - component: {fileID: 1199016231}
   - component: {fileID: 1199016230}
   - component: {fileID: 1199016234}
+  - component: {fileID: 1199016235}
   m_Layer: 0
   m_Name: IBASHA
   m_TagString: Untagged
@@ -13879,7 +13880,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.48, y: 0.48}
+    oldSize: {x: 0.19, y: 0.32}
     newSize: {x: 0.48, y: 0.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -13887,13 +13888,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.17999999, y: 0.12}
-      - {x: -0.21, y: 0.11}
-      - {x: -0.21, y: -0.24}
-      - {x: 0, y: -0.24}
-      - {x: 0, y: -0.22}
-      - {x: -0.02, y: 0.049999997}
-      - {x: -0.06, y: 0.12}
+    - - {x: -0.065, y: 0.17}
+      - {x: -0.085, y: 0.16}
+      - {x: -0.085, y: -0.17}
+      - {x: 0.085, y: -0.17}
+      - {x: 0.085, y: 0.13}
+      - {x: 0.065, y: 0.17}
 --- !u!50 &1199016231
 Rigidbody2D:
   serializedVersion: 4
@@ -13914,7 +13914,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1199016232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13974,8 +13974,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199016229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.97, y: -1.28, z: -11.495117}
-  m_LocalScale: {x: 1.2729142, y: 1.4373876, z: 1.084942}
+  m_LocalPosition: {x: -2.091, y: -1.375, z: -11.495117}
+  m_LocalScale: {x: 1.2729142, y: 1.4373876, z: 0}
   m_Children:
   - {fileID: 1746349197}
   m_Father: {fileID: 0}
@@ -14004,6 +14004,25 @@ MonoBehaviour:
     m_Bits: 1024
   anim: {fileID: 0}
   respawn: {x: 0, y: 0, z: 0}
+--- !u!95 &1199016235
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199016229}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3faeeba6c9633e842919d9fa7f889873, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1202447917
 GameObject:
   m_ObjectHideFlags: 0
