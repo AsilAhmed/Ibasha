@@ -6106,7 +6106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 488076586}
   - component: {fileID: 488076587}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_50 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7015,7 +7015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 562949384}
   - component: {fileID: 562949385}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8218,7 +8218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 622505177}
   - component: {fileID: 622505178}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_50 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9848,7 +9848,7 @@ GameObject:
   - component: {fileID: 825338982}
   - component: {fileID: 825338981}
   - component: {fileID: 825338983}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Platform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12843,7 +12843,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1146312380}
   - component: {fileID: 1146312381}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13411,7 +13411,7 @@ GameObject:
   - component: {fileID: 1181361748}
   - component: {fileID: 1181361747}
   - component: {fileID: 1181361749}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13522,7 +13522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187169659}
   - component: {fileID: 1187169660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_50 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14900,7 +14900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1303076398}
   - component: {fileID: 1303076399}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_50 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16829,7 +16829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1463692544}
   - component: {fileID: 1463692545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21630,7 +21630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1962510659}
   - component: {fileID: 1962510660}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tile_51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
