@@ -1408,7 +1408,6 @@ GameObject:
   m_Component:
   - component: {fileID: 145829900}
   - component: {fileID: 145829899}
-  - component: {fileID: 145829901}
   m_Layer: 0
   m_Name: BgLvl3
   m_TagString: Untagged
@@ -1482,32 +1481,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &145829901
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145829898}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.009551048, y: -0.009474754}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.76, y: 3.24}
-    newSize: {x: 5.76, y: 3.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5.757303, y: 3.2244427}
-  m_EdgeRadius: 0
 --- !u!1 &157966266
 GameObject:
   m_ObjectHideFlags: 0
@@ -6650,7 +6623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1199016233}
   camera_speed: 0.9
-  offset: {x: 0.7, y: 0.3, z: 0}
+  offset: {x: 0.7, y: 0.2, z: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -6702,7 +6675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: -1.08, z: -12}
+  m_LocalPosition: {x: -1.28, y: -1.13, z: -12}
   m_LocalScale: {x: 0, y: 0, z: 0.89162}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13980,7 +13953,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 629363093
   m_SortingLayer: 3
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 6474817916930609645, guid: 2f0dbb1cd7a9b454db8c35f6f2c24cc5,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14001,7 +13974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199016229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.5, y: -0.82, z: -11.495117}
+  m_LocalPosition: {x: -1.97, y: -1.28, z: -11.495117}
   m_LocalScale: {x: 1.2729142, y: 1.4373876, z: 1.084942}
   m_Children:
   - {fileID: 1746349197}
@@ -16615,7 +16588,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456062732}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0172005, y: -0.7076175, z: 0.15445791}
+  m_LocalPosition: {x: -1.011, y: -0.7076175, z: 0.15445791}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1496807084}
@@ -19188,8 +19161,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1750915378}
   - component: {fileID: 1750915377}
-  - component: {fileID: 1750915380}
   - component: {fileID: 1750915379}
+  - component: {fileID: 1750915380}
   m_Layer: 10
   m_Name: GroundTiles
   m_TagString: Untagged
@@ -19378,9 +19351,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.16, y: 0.1418029}
-  - {x: 3.7581885, y: 0.14552844}
-  - {x: 3.7379117, y: -0.14988732}
+  - {x: -0.14865604, y: 0.1474737}
+  - {x: 3.7220562, y: 0.14747381}
 --- !u!1 &1766420256
 GameObject:
   m_ObjectHideFlags: 0
@@ -22491,8 +22463,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -303422473
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1bd95cb76573f244aaabdf051f70d2fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
