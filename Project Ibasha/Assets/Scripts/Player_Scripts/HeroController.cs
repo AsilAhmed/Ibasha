@@ -5,7 +5,7 @@ using UnityEngine;
 public class HeroController : MonoBehaviour
 {
     public float speed = 1f;
-    public float jump_speed = 5f;
+    public float jump_speed = 4f;
     public float timedelay = 0.5f;
     public float Radius;
     public float movement;
