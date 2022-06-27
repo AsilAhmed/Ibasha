@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 568690364581067506
     second: Punk_attack3_7
+  - first:
+      213: -7163389290656966605
+    second: Punk_attack3_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,10 +129,10 @@ TextureImporter:
       name: Punk_attack3_0
       rect:
         serializedVersion: 2
-        x: 4
+        x: 5
         y: 0
-        width: 20
-        height: 48
+        width: 17
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,8 +152,8 @@ TextureImporter:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 24
-        height: 48
+        width: 22
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,8 +173,8 @@ TextureImporter:
         serializedVersion: 2
         x: 96
         y: 0
-        width: 26
-        height: 48
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +194,8 @@ TextureImporter:
         serializedVersion: 2
         x: 144
         y: 0
-        width: 26
-        height: 48
+        width: 24
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +213,10 @@ TextureImporter:
       name: Punk_attack3_4
       rect:
         serializedVersion: 2
-        x: 189
+        x: 193
         y: 0
-        width: 29
-        height: 48
+        width: 23
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,10 +234,10 @@ TextureImporter:
       name: Punk_attack3_5
       rect:
         serializedVersion: 2
-        x: 237
+        x: 240
         y: 0
-        width: 40
-        height: 48
+        width: 37
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,34 +252,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Punk_attack3_6
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 0
-        width: 44
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfa76c9a344375420800000000000000
-      internalID: 2618619173555043068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Punk_attack3_7
       rect:
         serializedVersion: 2
-        x: 333
+        x: 288
         y: 0
-        width: 46
-        height: 48
+        width: 41
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,6 +268,27 @@ TextureImporter:
       bones: []
       spriteID: 2faba00afd464e700800000000000000
       internalID: 568690364581067506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punk_attack3_9
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338dd86b467869c90800000000000000
+      internalID: -7163389290656966605
       vertices: []
       indices: 
       edges: []
