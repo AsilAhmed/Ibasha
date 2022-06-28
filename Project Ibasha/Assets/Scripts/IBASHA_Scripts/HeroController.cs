@@ -33,10 +33,12 @@ public class HeroController : MonoBehaviour
         if (movement > 0f)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
+            SoundManager.PlaySound("run");
         }
         else if (movement < 0f)
         {
             transform.eulerAngles = new Vector3(0, 180, 0);
+            SoundManager.PlaySound("run");
         }
 
         // Changing the velocity of Player acording to time and speed To create the effectv of movement
@@ -46,6 +48,7 @@ public class HeroController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isTouchingground)
         {
             rb.velocity = new Vector2(rb.velocity.x, jump_speed);
+            SoundManager.PlaySound("jump");
         }
         //Playing animations of Running and Jumping
 
