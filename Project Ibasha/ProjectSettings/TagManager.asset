@@ -9,6 +9,7 @@ TagManager:
   - Money
   - LifeCount
   - IBASHA
+  - Ladder
   layers:
   - Default
   - TransparentFX
