@@ -9,9 +9,14 @@ public class Ladder : MonoBehaviour
     private float ClimbSpeed = 5f;      // Climbing speed of player on ladder
     private bool IsClimbing;            // Checking whether player is climbing or not
     private bool IsLadder;              // Checking whether there is a ladder or not 
+    Animator anim;
 
     [SerializeField] private Rigidbody2D rgb;
 
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,13 +34,14 @@ public class Ladder : MonoBehaviour
     {
         if (IsClimbing)
         {
-            Debug.Log(rgb.gravityScale);
+            anim.SetBool("IsClimbing", IsClimbing);
             rgb.gravityScale = 0f;
             rgb.velocity = new Vector2(rgb.velocity.x, ClimbSpeed * VerticalMovement);
         }
         else
         {
             rgb.gravityScale = 1f;
+            anim.SetBool("IsClimbing", IsClimbing);
         }
     }
 
@@ -44,7 +50,7 @@ public class Ladder : MonoBehaviour
         if (collision.gameObject.tag.Equals("Ladder"))
         {
             IsLadder = true;
-            Debug.Log("Colliding with ladder");
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
