@@ -6,16 +6,17 @@ public class Ladder : MonoBehaviour
 {
 
     private float VerticalMovement;     // For vertical movement of player on ladder
-    private float ClimbSpeed = 5f;      // Climbing speed of player on ladder
+    private float ClimbSpeed = 3f;      // Climbing speed of player on ladder
     private bool IsClimbing;            // Checking whether player is climbing or not
     private bool IsLadder;              // Checking whether there is a ladder or not 
     Animator anim;
 
-    [SerializeField] private Rigidbody2D rgb;
-
+    //[SerializeField] private Rigidbody2D rgb;
+    Rigidbody2D rgb;
     void Start()
     {
         anim = GetComponent<Animator>();
+        rgb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
