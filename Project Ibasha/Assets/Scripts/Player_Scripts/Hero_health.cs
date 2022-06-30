@@ -29,36 +29,27 @@ public class Hero_health : MonoBehaviour
        
         if (collision.gameObject.tag == "Obstacle" && currhealth > 0)
         {
-            currhealth -= 70;                    //spring damage is 5
+            currhealth -= 5;                    //spring damage is 5
             
             healthbar.fillAmount = currhealth / maxhealth;
 
             Playeranim.SetTrigger("isHurt");
             SoundManager.PlaySound("hurt");
         }
-        else if (collision.gameObject.tag == "zombie_tag" && currhealth > 0)
-        {
-            currhealth -= 10;                   // zombie damage is 10 
-
-            healthbar.fillAmount = currhealth / maxhealth;
-            Playeranim.SetTrigger("isHurt");
-            SoundManager.PlaySound("hurt");
-
-        }
-        else if (collision.gameObject.tag == "health_tag" && currhealth < 100)
+        else if (collision.gameObject.tag == "Health_Tag" && currhealth < 100)
         {
             currhealth += 5;                   // health increment 
             health_count++;
             healthbar.fillAmount = currhealth / maxhealth;
-            
-            SoundManager.PlaySound("Hpickup");
+
+            SoundManager.PlaySound("HPickup");
 
             if (health_count == 2)
             {
                 Destroy(collision.gameObject);
                 health_count = 0;
             }
-            
+
         }
     }
 
