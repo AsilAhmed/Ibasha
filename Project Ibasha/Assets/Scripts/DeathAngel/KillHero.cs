@@ -26,14 +26,14 @@ public class KillHero : MonoBehaviour
     void Update()
     {
         distToPlayer = Vector2.Distance(transform.position, player.position);
-
+        Debug.Log(distToPlayer);
 
         // Current Health Decreased after 5 Means He is dead 
         if (distToPlayer > range && Hero_health.currhealth < 5)
         {
             ChasePlayer();
         }
-        else if (Hero_health.currhealth < 5)        // Player died and Death angel is near him to Attack
+        else if ((Hero_health.currhealth < 5) && (distToPlayer <=range))        // Player died and Death angel is near him to Attack
         {
             rigidbody.velocity = Vector2.zero;
             DeathAngelAnim.SetTrigger("KillHero");
@@ -46,14 +46,14 @@ public class KillHero : MonoBehaviour
 
     void ChasePlayer()
     {
-        if ((transform.position.x < player.position.x ) || transform.position.x < min)
+        if ((transform.position.x < player.position.x ) || transform.position.x < min )
         {
             
             rigidbody.velocity = new Vector2(movementDirX * speed, 0);
             transform.localScale = new Vector2(localScale.x, localScale.y);
         }
 
-        else if ((transform.position.x > player.position.x  ) || transform.position.x > max)
+        else if ((transform.position.x > player.position.x  ) || transform.position.x > max )
         {
 
             rigidbody.velocity = new Vector2(-movementDirX * speed, 0);
