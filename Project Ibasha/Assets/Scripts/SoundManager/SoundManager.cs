@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     static AudioSource SRC;
     //static AudioClip jump,dead, healthpickup, coinpickup,hurt,run;
-    static AudioClip jump,  fall, run,money;
+    static AudioClip hurt,dead,jump,  fall, run,money;
 
     void Start()
     {
@@ -15,11 +15,11 @@ public class SoundManager : MonoBehaviour
         jump = Resources.Load<AudioClip>("jump");
         //healthpickup = Resources.Load<AudioClip>("health_pickup");
         //coinpickup = Resources.Load<AudioClip>("coin_pickup");
-        //hurt = Resources.Load<AudioClip>("hurt");
-        run = Resources.Load<AudioClip>("running on leaves");
+        hurt = Resources.Load<AudioClip>("hurt");
+        run = Resources.Load<AudioClip>("run");
         money = Resources.Load<AudioClip>("MoneyPickup");
         fall = Resources.Load<AudioClip>("falling");
-        //dead = Resources.Load<AudioClip>("dead");
+        dead = Resources.Load<AudioClip>("dead");
     }
 
     // Update is called once per frame
@@ -60,9 +60,17 @@ public class SoundManager : MonoBehaviour
                 SRC.PlayOneShot(fall);
                 break;
 
-            
+
+            case "hurt":
+                SRC.PlayOneShot(hurt);
+                break;
+
             case "run":
                 SRC.PlayOneShot(run);
+                break;
+
+            case "dead":
+                SRC.PlayOneShot(dead);
                 break;
 
             case "money":

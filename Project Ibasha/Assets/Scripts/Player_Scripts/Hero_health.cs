@@ -25,19 +25,19 @@ public class Hero_health : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(currhealth <1)
+        if(currhealth <0.1)
         {
-            anim.SetTrigger("dead");
+            anim.SetTrigger("isDead");
             SoundManager.PlaySound("dead");
         }
 
-        if (collision.gameObject.tag == "spring_tag" && currhealth > 0)
+        if (collision.gameObject.tag == "Obstacle" && currhealth > 0)
         {
-            currhealth -= 5;                    //spring damage is 5
+            currhealth -= 10;                    //spring damage is 5
             
             healthbar.fillAmount = currhealth / maxhealth;
 
-            anim.SetTrigger("hurt");
+            anim.SetTrigger("isHurt");
             SoundManager.PlaySound("hurt");
         }
         else if (collision.gameObject.tag == "zombie_tag" && currhealth > 0)
@@ -45,7 +45,7 @@ public class Hero_health : MonoBehaviour
             currhealth -= 10;                   // zombie damage is 10 
 
             healthbar.fillAmount = currhealth / maxhealth;
-            anim.SetTrigger("hurt");
+            anim.SetTrigger("isHurt");
             SoundManager.PlaySound("hurt");
 
         }

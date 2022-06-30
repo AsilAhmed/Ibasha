@@ -10,6 +10,7 @@ TagManager:
   - LifeCount
   - IBASHA
   - Ladder
+  - Obstacle
   layers:
   - Default
   - TransparentFX
