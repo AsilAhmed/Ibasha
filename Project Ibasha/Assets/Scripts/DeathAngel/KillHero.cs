@@ -7,7 +7,7 @@ public class KillHero : MonoBehaviour
     // Start is called before the first frame update
 
     new Rigidbody2D rigidbody;
-    float speed = 10f, movementDirX, range = .5f, distToPlayer, min = -200f, max = 200f; // 20 and -20 r the x coordinates of screen edges
+    float speed = 20f, movementDirX, range = .5f, distToPlayer, min = -3f, max = 70f; // 20 and -20 r the x coordinates of screen edges
     Vector2 localScale;
     public static bool isAttacking = false;
     public Transform player;
@@ -40,7 +40,7 @@ public class KillHero : MonoBehaviour
         }
         else {
             // When The player is alive  So Death angel is at a specific Position In Start of lvl 1 at(-2,1)..
-            transform.position = new Vector2(-2, 1);
+            transform.position = new Vector2(26, 4);
         }
     }
 
