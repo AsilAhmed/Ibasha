@@ -7,10 +7,11 @@ using UnityEngine.UI;
 public class Hero_health : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float currhealth;
+    static public float currhealth;
     float maxhealth = 100f;
-    Animator anim;
+    static public Animator Playeranim;
     Image healthbar;
+    
     
     
     // This variable will hold the value of heart_pickup, which will be max 2 times and then we will destroy that heart object
@@ -20,24 +21,19 @@ public class Hero_health : MonoBehaviour
     {
         currhealth = maxhealth;
         healthbar = GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Image>();
-        anim = GetComponent<Animator>();
+        Playeranim = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(currhealth <0.1)
-        {
-            anim.SetTrigger("isDead");
-            SoundManager.PlaySound("dead");
-        }
-
+       
         if (collision.gameObject.tag == "Obstacle" && currhealth > 0)
         {
-            currhealth -= 10;                    //spring damage is 5
+            currhealth -= 70;                    //spring damage is 5
             
             healthbar.fillAmount = currhealth / maxhealth;
 
-            anim.SetTrigger("isHurt");
+            Playeranim.SetTrigger("isHurt");
             SoundManager.PlaySound("hurt");
         }
         else if (collision.gameObject.tag == "zombie_tag" && currhealth > 0)
@@ -45,7 +41,7 @@ public class Hero_health : MonoBehaviour
             currhealth -= 10;                   // zombie damage is 10 
 
             healthbar.fillAmount = currhealth / maxhealth;
-            anim.SetTrigger("isHurt");
+            Playeranim.SetTrigger("isHurt");
             SoundManager.PlaySound("hurt");
 
         }
