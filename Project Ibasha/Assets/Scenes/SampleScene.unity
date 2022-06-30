@@ -1191,6 +1191,7 @@ GameObject:
   - component: {fileID: 40719015}
   - component: {fileID: 40719014}
   - component: {fileID: 40719013}
+  - component: {fileID: 40719016}
   m_Layer: 0
   m_Name: fire_column_medium_1 (3)
   m_TagString: Obstacle
@@ -1275,12 +1276,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 40719012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.442, y: -1.642, z: 0}
+  m_LocalPosition: {x: 46.458, y: -1.647, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &40719016
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40719012}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2832919}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.9}
+    newSize: {x: 0.45, y: 0.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 0.33341616}
+  m_EdgeRadius: 0
 --- !u!1 &44514324
 GameObject:
   m_ObjectHideFlags: 0
@@ -14574,10 +14601,9 @@ GameObject:
   - component: {fileID: 576891559}
   - component: {fileID: 576891558}
   - component: {fileID: 576891557}
-  - component: {fileID: 576891560}
   m_Layer: 0
   m_Name: Fountain
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14666,54 +14692,6 @@ Transform:
   m_Father: {fileID: 189062727}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &576891560
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576891556}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.69}
-    newSize: {x: 0.64, y: 0.69}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.22999999, y: 0.085}
-      - {x: 0.17999999, y: 0.265}
-      - {x: 0.13, y: 0.345}
-      - {x: -0.089999996, y: 0.345}
-      - {x: -0.22, y: 0.285}
-      - {x: -0.32, y: -0.074999996}
-      - {x: -0.32, y: -0.345}
-      - {x: 0.32, y: -0.345}
-      - {x: 0.32, y: -0.145}
-      - {x: 0.28, y: 0.035}
-    - - {x: -0.08, y: -0.085}
-      - {x: -0.089999996, y: -0.085}
-      - {x: -0.089999996, y: -0.16499999}
-      - {x: -0.08, y: -0.16499999}
-    - - {x: 0.089999996, y: -0.085}
-      - {x: 0.08, y: -0.085}
-      - {x: 0.089999996, y: -0.16499999}
-    - - {x: -0.07, y: 0.16499999}
-      - {x: -0.07, y: 0.095}
-    - - {x: 0.07, y: 0.105}
-      - {x: 0.07, y: 0.16499999}
-      - {x: 0.07, y: 0.095}
-      - {x: 0.08, y: 0.095}
 --- !u!1 &581398865
 GameObject:
   m_ObjectHideFlags: 0
@@ -16165,6 +16143,7 @@ GameObject:
   - component: {fileID: 642781964}
   - component: {fileID: 642781963}
   - component: {fileID: 642781962}
+  - component: {fileID: 642781965}
   m_Layer: 0
   m_Name: Spear_0 (1)
   m_TagString: Obstacle
@@ -16256,6 +16235,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &642781965
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642781961}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.20221709}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.64}
+    newSize: {x: 0.16, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.23556581}
+  m_EdgeRadius: 0
 --- !u!1 &652933574
 GameObject:
   m_ObjectHideFlags: 0
@@ -18001,6 +18006,7 @@ GameObject:
   - component: {fileID: 737775276}
   - component: {fileID: 737775275}
   - component: {fileID: 737775274}
+  - component: {fileID: 737775277}
   m_Layer: 0
   m_Name: fire_column_medium_1
   m_TagString: Obstacle
@@ -18085,12 +18091,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737775273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.129, y: -1.642, z: 0}
+  m_LocalPosition: {x: 46.145, y: -1.647, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &737775277
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737775273}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.2832919}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.9}
+    newSize: {x: 0.45, y: 0.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 0.33341616}
+  m_EdgeRadius: 0
 --- !u!1 &741950671
 GameObject:
   m_ObjectHideFlags: 0
@@ -21204,7 +21236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864816975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 1, z: 0}
+  m_LocalPosition: {x: 27, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 153192456}
@@ -28062,7 +28094,7 @@ GameObject:
   - component: {fileID: 1161618775}
   m_Layer: 0
   m_Name: SpikesLvl1 (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29126,7 +29158,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199016229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.37, y: -1.3, z: -11.495117}
+  m_LocalPosition: {x: -1.96, y: -1.19, z: -11.495117}
   m_LocalScale: {x: 1.2729142, y: 1.3038998, z: 0}
   m_Children:
   - {fileID: 1746349197}
@@ -40659,7 +40691,7 @@ GameObject:
   - component: {fileID: 1723757793}
   m_Layer: 0
   m_Name: SpikesLvl1 (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41718,6 +41750,7 @@ GameObject:
   - component: {fileID: 1784895597}
   - component: {fileID: 1784895596}
   - component: {fileID: 1784895595}
+  - component: {fileID: 1784895598}
   m_Layer: 0
   m_Name: Spear_0 (3)
   m_TagString: Obstacle
@@ -41809,6 +41842,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1784895598
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784895594}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.19917625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.64}
+    newSize: {x: 0.16, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.24164748}
+  m_EdgeRadius: 0
 --- !u!1 &1787567112
 GameObject:
   m_ObjectHideFlags: 0
@@ -42469,6 +42528,7 @@ GameObject:
   - component: {fileID: 1818195975}
   - component: {fileID: 1818195974}
   - component: {fileID: 1818195973}
+  - component: {fileID: 1818195976}
   m_Layer: 0
   m_Name: Spear_0 (4)
   m_TagString: Obstacle
@@ -42560,6 +42620,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1818195976
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818195972}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.20145689}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.64}
+    newSize: {x: 0.16, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.2370862}
+  m_EdgeRadius: 0
 --- !u!1 &1818692848
 GameObject:
   m_ObjectHideFlags: 0
@@ -47269,6 +47355,7 @@ GameObject:
   - component: {fileID: 2002628562}
   - component: {fileID: 2002628561}
   - component: {fileID: 2002628560}
+  - component: {fileID: 2002628563}
   m_Layer: 0
   m_Name: Spear_0
   m_TagString: Obstacle
@@ -47360,6 +47447,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2002628563
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002628559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.20449772}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.64}
+    newSize: {x: 0.16, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.23100454}
+  m_EdgeRadius: 0
 --- !u!1 &2004482365
 GameObject:
   m_ObjectHideFlags: 0
@@ -48358,6 +48471,7 @@ GameObject:
   - component: {fileID: 2034737284}
   - component: {fileID: 2034737283}
   - component: {fileID: 2034737282}
+  - component: {fileID: 2034737285}
   m_Layer: 0
   m_Name: Spear_0 (2)
   m_TagString: Obstacle
@@ -48449,6 +48563,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2034737285
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034737281}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.20297734}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.64}
+    newSize: {x: 0.16, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.2340453}
+  m_EdgeRadius: 0
 --- !u!1 &2037852630
 GameObject:
   m_ObjectHideFlags: 0
@@ -48541,6 +48681,7 @@ GameObject:
   - component: {fileID: 2038161073}
   - component: {fileID: 2038161072}
   - component: {fileID: 2038161071}
+  - component: {fileID: 2038161074}
   m_Layer: 0
   m_Name: fire_column_medium_1 (2)
   m_TagString: Obstacle
@@ -48625,12 +48766,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038161070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.826, y: -1.642, z: 0}
+  m_LocalPosition: {x: 45.842, y: -1.647, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2038161074
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038161070}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.28096023}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.9}
+    newSize: {x: 0.45, y: 0.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45, y: 0.3380795}
+  m_EdgeRadius: 0
 --- !u!1 &2042090443
 GameObject:
   m_ObjectHideFlags: 0
