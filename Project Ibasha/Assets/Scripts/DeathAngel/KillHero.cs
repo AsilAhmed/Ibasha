@@ -7,7 +7,7 @@ public class KillHero : MonoBehaviour
     // Start is called before the first frame update
 
     new Rigidbody2D rigidbody;
-    float speed = 10f, movementDirX, range = .5f, distToPlayer, min = -200f, max = 200f; // 20 and -20 r the x coordinates of screen edges
+    float speed = 15f, movementDirX, range = .5f, distToPlayer, min = -3f, max = 70f; // 20 and -20 r the x coordinates of screen edges
     Vector2 localScale;
     public static bool isAttacking = false;
     public Transform player;
@@ -26,34 +26,34 @@ public class KillHero : MonoBehaviour
     void Update()
     {
         distToPlayer = Vector2.Distance(transform.position, player.position);
-
+        Debug.Log(distToPlayer);
 
         // Current Health Decreased after 5 Means He is dead 
         if (distToPlayer > range && Hero_health.currhealth < 5)
         {
             ChasePlayer();
         }
-        else if (Hero_health.currhealth < 5)        // Player died and Death angel is near him to Attack
+        else if ((Hero_health.currhealth < 5) && (distToPlayer <=range))        // Player died and Death angel is near him to Attack
         {
             rigidbody.velocity = Vector2.zero;
             DeathAngelAnim.SetTrigger("KillHero");
         }
         else {
             // When The player is alive  So Death angel is at a specific Position In Start of lvl 1 at(-2,1)..
-            transform.position = new Vector2(-2, 1);
+            transform.position = new Vector2(26, 4);
         }
     }
 
     void ChasePlayer()
     {
-        if ((transform.position.x < player.position.x ) || transform.position.x < min)
+        if ((transform.position.x < player.position.x ) || transform.position.x < min )
         {
             
             rigidbody.velocity = new Vector2(movementDirX * speed, 0);
             transform.localScale = new Vector2(localScale.x, localScale.y);
         }
 
-        else if ((transform.position.x > player.position.x  ) || transform.position.x > max)
+        else if ((transform.position.x > player.position.x  ) || transform.position.x > max )
         {
 
             rigidbody.velocity = new Vector2(-movementDirX * speed, 0);
