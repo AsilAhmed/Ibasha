@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Respawn : MonoBehaviour
 {
     static public Vector3 respawn_lvl1, respawn_lvl2, respawn_lvl3;
-    static public int lifecount = 2;
+    static public int lifecount = 3;
     static public  Text LifeCount;
     static public bool GameOver = false;
 
@@ -16,7 +16,7 @@ public class Respawn : MonoBehaviour
     {
         //PlayerNewPosition = new Vector3(-2, -1, 0);
         respawn_lvl1 = new Vector3(-2, -1, 0);
-        respawn_lvl2 = new Vector3(18, -1, -12);
+        respawn_lvl2 = new Vector3(18, -1, 0);
         respawn_lvl3 = new Vector3(38, -1, 0);
         LifeCount = GameObject.FindGameObjectWithTag("LifeCount").GetComponent<Text>();
     }
@@ -49,8 +49,9 @@ public class Respawn : MonoBehaviour
             GameOver = true;
         }
         else {
-
+            // Getting Full HealthBar At a Life Lost
             Hero_health.currhealth = 100;
+            Hero_health.healthbar.fillAmount = 1;
             
         }
 
