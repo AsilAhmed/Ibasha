@@ -18,7 +18,13 @@ public class GAMEOVER : MonoBehaviour
             Time.timeScale = 0f;
             GameIsOver = true;
         }
+        if (Respawn.GameOver == false)
+        {
 
+            GameOverUI.SetActive(false);
+         
+            GameIsOver = false;
+        }
 
 
     }
