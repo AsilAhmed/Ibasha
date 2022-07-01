@@ -24780,7 +24780,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 52
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926719126
 GameObject:
@@ -41173,7 +41173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd60d47dafbb0247aae719b1faa7114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GameOverUI: {fileID: 0}
+  GameOverUI: {fileID: 940268050}
 --- !u!114 &1560835101
 MonoBehaviour:
   m_ObjectHideFlags: 0
