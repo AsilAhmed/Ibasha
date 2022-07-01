@@ -15,7 +15,8 @@ public class Level_Manager : MonoBehaviour
     }
 
     // Update is called once per frame
-    
+     
+
 
     public void Coins_Counter(int Score)
     {
