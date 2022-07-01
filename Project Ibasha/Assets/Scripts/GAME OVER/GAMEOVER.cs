@@ -16,12 +16,14 @@ public class GAMEOVER : MonoBehaviour
             GameOverUI.SetActive(true);
             Time.timeScale = 0f;
             GameIsOver = true;
+            //Respawn.GameOver = false;
         }
         else if(Respawn.GameOver == false)
         {
-            Debug.Log("asdas");
+            
             GameOverUI.SetActive(false);
             GameIsOver = false;
+            
         }
 
         
