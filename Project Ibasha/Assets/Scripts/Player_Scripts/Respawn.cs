@@ -47,7 +47,6 @@ public class Respawn : MonoBehaviour
         if (lifecount == 0)
         {
             GameOver = true;
-
         }
         else {
 
