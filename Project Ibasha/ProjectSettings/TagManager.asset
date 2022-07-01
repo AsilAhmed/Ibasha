@@ -15,6 +15,7 @@ TagManager:
   - FallDetectorlvl2
   - FallDetectorlvl1
   - FallDetectorlvl3
+  - SkeletonEnemy
   layers:
   - Default
   - TransparentFX
