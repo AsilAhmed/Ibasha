@@ -58,19 +58,33 @@ public class HeroController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //if (collision.gameObject.tag.Equals("FallDetectorlvl1"))
+        //{
+        //    transform.position = Respawn.RespawnOnCurrLvl(collision.gameObject.tag); 
+
+        //}
+        //else if (collision.gameObject.tag.Equals("FallDetectorlvl2"))
+        //{
+        //    transform.position = Respawn.RespawnOnCurrLvl(collision.gameObject.tag);
+        //}
+        //else if (collision.gameObject.tag.Equals("FallDetectorlvl3"))
+        //{
+        //    transform.position = Respawn.RespawnOnCurrLvl(collision.gameObject.tag);
+        //}
+
         if (collision.gameObject.tag.Equals("FallDetectorlvl1"))
         {
-            transform.position = Respawn.respawn_lvl1;
-            
+             transform.position = Respawn.RespawnOnCurrLvl(collision.gameObject.tag);
+
         }
         else if (collision.gameObject.tag.Equals("FallDetectorlvl2"))
         {
-            transform.position = Respawn.respawn_lvl2;
+            transform.position = Respawn.RespawnOnCurrLvl(collision.gameObject.tag);
         }
         else if (collision.gameObject.tag.Equals("FallDetectorlvl3"))
         {
-            transform.position = Respawn.respawn_lvl3;
+            transform.position = Respawn.RespawnOnCurrLvl(collision.gameObject.tag);
         }
-        Respawn.RespawnOnCurrLvl();
+
     }
 }

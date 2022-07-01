@@ -16465,7 +16465,7 @@ GameObject:
   - component: {fileID: 608543335}
   m_Layer: 0
   m_Name: BgLvl1
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22522,7 +22522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864816975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26, y: 4, z: 0}
+  m_LocalPosition: {x: 27, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 153192456}
@@ -24447,6 +24447,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &925451573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 925451575}
+  - component: {fileID: 925451574}
+  m_Layer: 0
+  m_Name: LVL1BoxCollider
+  m_TagString: FallDetectorlvl1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &925451574
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925451573}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -7.3787155, y: 0.5970206}
+  - {x: 11.999135, y: 0.5970206}
+--- !u!4 &925451575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925451573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.12, y: -3.7, z: -1.6437968}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 52
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &926719126
 GameObject:
   m_ObjectHideFlags: 0
@@ -30711,8 +30760,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -13.704402, y: -1.4125643}
-  - {x: -4.0857162, y: -1.3716202}
+  - {x: -13.845022, y: -1.0219548}
+  - {x: -4.163839, y: -0.9966348}
 --- !u!1 &1196698875
 GameObject:
   m_ObjectHideFlags: 0
@@ -31118,7 +31167,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199016229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.55, y: -0.69, z: 0}
+  m_LocalPosition: {x: -0.31, y: -1.32, z: 0}
   m_LocalScale: {x: 1.2729142, y: 1.3038998, z: 0}
   m_Children:
   - {fileID: 1746349197}
@@ -37643,7 +37692,7 @@ GameObject:
   - component: {fileID: 1433462593}
   m_Layer: 0
   m_Name: BgLvlL
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

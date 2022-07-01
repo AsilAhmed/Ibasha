@@ -26,7 +26,7 @@ public class KillHero : MonoBehaviour
     void Update()
     {
         distToPlayer = Vector2.Distance(transform.position, player.position);
-        
+       
 
         // Current Health Decreased after 5 Means He is dead 
         if (distToPlayer > range && Hero_health.currhealth < 5)
@@ -37,6 +37,7 @@ public class KillHero : MonoBehaviour
         {
             rigidbody.velocity = Vector2.zero;
             DeathAngelAnim.SetTrigger("KillHero");
+            CheckDeathLvlPlayer(player.position.x);
         }
         else {
             // When The player is alive  So Death angel is at a specific Position In Start of lvl 1 at(-2,1)..
@@ -71,6 +72,23 @@ public class KillHero : MonoBehaviour
             Destroy(gameObject);                         // Deleting Death Angel
 
 
+        }
+    }
+
+    // This Function will Respawn our player to Start of existing lvl
+    public void CheckDeathLvlPlayer(float Herox_axis)
+    {
+        if (Herox_axis < 16)
+        {
+            player.position = Respawn.RespawnOnCurrLvl("FallDetectorlvl1");
+        }
+        else if (Herox_axis < 36)
+        {
+            player.position = Respawn.RespawnOnCurrLvl("FallDetectorlvl2");
+        }
+        else if (Herox_axis > 36)
+        {
+            player.position = Respawn.RespawnOnCurrLvl("FallDetectorlvl3");
         }
     }
 
