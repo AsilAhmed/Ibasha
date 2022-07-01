@@ -7,14 +7,14 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     static AudioSource SRC;
     //static AudioClip jump,dead, healthpickup, coinpickup,hurt,run;
-    static AudioClip hurt,dead,jump,  fall, run,money, healthpickup;
+    static AudioClip hurt,dead,jump,  fall, run,money, healthpickup, PlayerAttack;
 
     void Start()
     {
         SRC = GetComponent<AudioSource>();
         jump = Resources.Load<AudioClip>("jump");
         healthpickup = Resources.Load<AudioClip>("health_pickup");
-        //coinpickup = Resources.Load<AudioClip>("coin_pickup");
+        PlayerAttack = Resources.Load<AudioClip>("PlayerAttack");
         hurt = Resources.Load<AudioClip>("hurt");
         run = Resources.Load<AudioClip>("run");
         money = Resources.Load<AudioClip>("MoneyPickup");
@@ -81,6 +81,9 @@ public class SoundManager : MonoBehaviour
                 SRC.PlayOneShot(healthpickup);
                 break;
 
+            case "PlayerAttack":
+                SRC.PlayOneShot(PlayerAttack);
+                break;
 
 
         }
