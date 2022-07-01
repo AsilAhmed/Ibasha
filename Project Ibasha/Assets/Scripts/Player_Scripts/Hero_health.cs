@@ -10,7 +10,7 @@ public class Hero_health : MonoBehaviour
     static public float currhealth;
     static float maxhealth = 100f;
     static public Animator Playeranim;
-    static Image healthbar;
+    static public Image healthbar;
     
     
     

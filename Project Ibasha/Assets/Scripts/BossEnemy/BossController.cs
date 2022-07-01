@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkeletonController : MonoBehaviour
+public class BossController : MonoBehaviour
 {
     // Start is called before the first frame update
 
     new Rigidbody2D rigidbody;
-    float speed = 0.5f, movementDirX, range = 2f, distToPlayer, min = -3f, max = 70f; // 20 and -20 r the x coordinates of screen edges
+    float speed = 0.75f, movementDirX, range = 2f, distToPlayer, min = -3f, max = 75f; // 20 and -20 r the x coordinates of screen edges
     Vector2 localScale;
     public static bool isAttacking = false;
     public Transform player;
@@ -42,7 +42,7 @@ public class SkeletonController : MonoBehaviour
     {
         if ((transform.position.x < player.position.x && HeroController.movement != 0) || transform.position.x < min)
         {
-            
+
             rigidbody.velocity = new Vector2(movementDirX * speed, 0);
             transform.localScale = new Vector2(localScale.x, localScale.y);
         }
@@ -61,7 +61,7 @@ public class SkeletonController : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("FallDetectorlvl1"))
         {
-            transform.position = new Vector3(12,-1,0);
+            transform.position = new Vector3(12, -1, 0);
         }
     }
 }
