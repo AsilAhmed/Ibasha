@@ -8,7 +8,7 @@ public class HeroController : MonoBehaviour
     public float jump_speed = 4f;
     public float timedelay = 0.5f;
     public float Radius;
-    public float movement;
+    static public float movement;
     Rigidbody2D rb;
     public Transform groundcheckpoint;
     public LayerMask groundlayer;

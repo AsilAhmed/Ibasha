@@ -8,9 +8,9 @@ public class Hero_health : MonoBehaviour
 {
     // Start is called before the first frame update
     static public float currhealth;
-    float maxhealth = 100f;
+    static float maxhealth = 100f;
     static public Animator Playeranim;
-    Image healthbar;
+    static Image healthbar;
     
     
     
@@ -29,12 +29,7 @@ public class Hero_health : MonoBehaviour
        
         if (collision.gameObject.tag == "Obstacle" && currhealth > 0)
         {
-            currhealth -= 5;                    //spring damage is 5
-            
-            healthbar.fillAmount = currhealth / maxhealth;
-
-            Playeranim.SetTrigger("isHurt");
-            SoundManager.PlaySound("hurt");
+            TakeDamage(10);                    //obstacle damage is 5
         }
         else if (collision.gameObject.tag == "Health_Tag" && currhealth < 100)
         {
@@ -51,6 +46,16 @@ public class Hero_health : MonoBehaviour
             }
 
         }
+    }
+
+    public static void TakeDamage(int damage)
+    {
+        currhealth -= damage;
+        healthbar.fillAmount = currhealth / maxhealth;
+
+        Playeranim.SetTrigger("isHurt");
+        SoundManager.PlaySound("hurt");
+
     }
 
 }

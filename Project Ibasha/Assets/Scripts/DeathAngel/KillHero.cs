@@ -26,7 +26,7 @@ public class KillHero : MonoBehaviour
     void Update()
     {
         distToPlayer = Vector2.Distance(transform.position, player.position);
-        Debug.Log(distToPlayer);
+        
 
         // Current Health Decreased after 5 Means He is dead 
         if (distToPlayer > range && Hero_health.currhealth < 5)
