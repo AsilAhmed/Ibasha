@@ -64,11 +64,13 @@ public class KillHero : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag.Equals("IBASHA"))
+        if (collision.gameObject.tag.Equals("IBASHA") || Respawn.GameOver == true)
         {
             Hero_health.Playeranim.SetTrigger("isDead"); // Accessing Player death animation from health class
             SoundManager.PlaySound("dead");              // playing Death Sound Of Player
             Destroy(gameObject);                         // Deleting Death Angel
+
+
         }
     }
 

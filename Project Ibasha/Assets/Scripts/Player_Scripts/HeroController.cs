@@ -14,13 +14,12 @@ public class HeroController : MonoBehaviour
     public LayerMask groundlayer;
     bool isTouchingground;
     public Animator anim;
-    public Vector3 respawn;
-
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        respawn = transform.position;
+        
     }
 
     void Update()
@@ -55,5 +54,23 @@ public class HeroController : MonoBehaviour
         anim.SetFloat("Movement", Mathf.Abs(rb.velocity.x));
         anim.SetBool("OnGround", isTouchingground);
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("FallDetectorlvl1"))
+        {
+            transform.position = Respawn.respawn_lvl1;
+            
+        }
+        else if (collision.gameObject.tag.Equals("FallDetectorlvl2"))
+        {
+            transform.position = Respawn.respawn_lvl2;
+        }
+        else if (collision.gameObject.tag.Equals("FallDetectorlvl3"))
+        {
+            transform.position = Respawn.respawn_lvl3;
+        }
+        Respawn.RespawnOnCurrLvl();
     }
 }

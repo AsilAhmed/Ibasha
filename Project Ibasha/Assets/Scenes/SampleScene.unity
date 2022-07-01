@@ -1320,7 +1320,7 @@ GameObject:
   - component: {fileID: 44514326}
   m_Layer: 9
   m_Name: up
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1349,7 +1349,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -10678,7 +10678,7 @@ GameObject:
   - component: {fileID: 397924991}
   m_Layer: 9
   m_Name: right
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10707,7 +10707,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -14320,7 +14320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.651, y: -0.965, z: -12}
+  m_LocalPosition: {x: -0.51, y: -0.79, z: -12}
   m_LocalScale: {x: 0, y: 0, z: 0.89162}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14747,7 +14747,7 @@ GameObject:
   - component: {fileID: 533975971}
   - component: {fileID: 533975975}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30596,7 +30596,7 @@ GameObject:
   - component: {fileID: 1194091703}
   m_Layer: 9
   m_Name: down
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30625,7 +30625,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -30909,6 +30909,7 @@ GameObject:
   - component: {fileID: 1199016237}
   - component: {fileID: 1199016238}
   - component: {fileID: 1199016239}
+  - component: {fileID: 1199016240}
   m_Layer: 20
   m_Name: IBASHA
   m_TagString: IBASHA
@@ -31037,7 +31038,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199016229}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.97, y: -1.393, z: -11.495117}
+  m_LocalPosition: {x: 17.55, y: -0.69, z: 0}
   m_LocalScale: {x: 1.2729142, y: 1.3038998, z: 0}
   m_Children:
   - {fileID: 1746349197}
@@ -31066,7 +31067,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   anim: {fileID: 0}
-  respawn: {x: 0, y: 0, z: 0}
 --- !u!95 &1199016235
 Animator:
   serializedVersion: 3
@@ -31140,6 +31140,18 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 2048
+--- !u!114 &1199016240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199016229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed88a0d282a422848b3b9d8ba2e9b80d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1202447917
 GameObject:
   m_ObjectHideFlags: 0
@@ -31397,7 +31409,7 @@ GameObject:
   - component: {fileID: 1213842015}
   - component: {fileID: 1213842014}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37561,7 +37573,7 @@ GameObject:
   - component: {fileID: 1441703474}
   m_Layer: 5
   m_Name: LifeCount
-  m_TagString: Untagged
+  m_TagString: LifeCount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39074,7 +39086,7 @@ GameObject:
   - component: {fileID: 1496807085}
   m_Layer: 10
   m_Name: icey platform
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45145,7 +45157,7 @@ GameObject:
   - component: {fileID: 1809872685}
   m_Layer: 9
   m_Name: left
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45174,7 +45186,7 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -49840,7 +49852,7 @@ GameObject:
   - component: {fileID: 1962551102}
   m_Layer: 9
   m_Name: Colliders on Background
-  m_TagString: Untagged
+  m_TagString: FallDetectorlvl2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

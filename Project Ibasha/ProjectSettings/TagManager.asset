@@ -12,6 +12,9 @@ TagManager:
   - Ladder
   - Obstacle
   - Health_Tag
+  - FallDetectorlvl2
+  - FallDetectorlvl1
+  - FallDetectorlvl3
   layers:
   - Default
   - TransparentFX

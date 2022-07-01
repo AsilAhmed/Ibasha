@@ -14,6 +14,7 @@ public class Hero_health : MonoBehaviour
     
     
     
+    
     // This variable will hold the value of heart_pickup, which will be max 2 times and then we will destroy that heart object
 
     int health_count;            
@@ -21,6 +22,7 @@ public class Hero_health : MonoBehaviour
     {
         currhealth = maxhealth;
         healthbar = GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Image>();
+        
         Playeranim = GetComponent<Animator>();
     }
 
