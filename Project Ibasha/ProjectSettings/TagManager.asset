@@ -12,6 +12,7 @@ TagManager:
   - Ladder
   - Obstacle
   - Health_Tag
+  - SkeletonEnemy
   layers:
   - Default
   - TransparentFX

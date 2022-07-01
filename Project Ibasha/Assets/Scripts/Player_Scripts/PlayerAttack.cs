@@ -5,13 +5,15 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     Animator anim;
+  
     public Transform AttackPoint;
     public float AttackRange = .2f;
-    public LayerMask EnemyLayer; 
+    public LayerMask EnemyLayer;
+    int SimpleHitCount = 0;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();   
     }
 
     // Update is called once per frame
@@ -32,7 +34,17 @@ public class PlayerAttack : MonoBehaviour
 
         foreach (Collider2D Enemy in hitEnemies)
         {
-            SkeletonHealth.TakeDamage(40);
+            if (Enemy.tag.Equals("SkeletonEnemy"))
+            {
+                SimpleHitCount++;
+                // If we hit same enemy twice He will die
+                if (SimpleHitCount == 2)
+                {
+                    Destroy(Enemy.gameObject);
+                    
+                    SimpleHitCount = 0; // changing back hit Count to zero for calculation of other enemies
+                }
+            }
         }
 
     
@@ -45,7 +57,8 @@ public class PlayerAttack : MonoBehaviour
         if (AttackPoint == null)
             return;
 
-
         Gizmos.DrawWireSphere(AttackPoint.position, AttackRange); 
     }
+
+    
 }
