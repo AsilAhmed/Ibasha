@@ -11,21 +11,20 @@ public class GAMEOVER : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Respawn.GameOver == true)
+        if(Respawn.GameOver == true)
         {
-
             GameOverUI.SetActive(true);
             Time.timeScale = 0f;
             GameIsOver = true;
         }
-        if (Respawn.GameOver == false)
+        else if(Respawn.GameOver == false)
         {
-
+            Debug.Log("asdas");
             GameOverUI.SetActive(false);
-         
             GameIsOver = false;
         }
 
-
+        
     }
+
 }
