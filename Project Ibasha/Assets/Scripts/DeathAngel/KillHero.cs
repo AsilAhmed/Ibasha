@@ -26,7 +26,7 @@ public class KillHero : MonoBehaviour
     void Update()
     {
         distToPlayer = Vector2.Distance(transform.position, player.position);
-       
+        Debug.Log(distToPlayer);
 
         // Current Health Decreased after 5 Means He is dead 
         if (distToPlayer > range && Hero_health.currhealth < 5)
@@ -69,7 +69,8 @@ public class KillHero : MonoBehaviour
         {
             //Hero_health.Playeranim.SetTrigger("isDead"); // Accessing Player death animation from health class
             SoundManager.PlaySound("dead");              // playing Death Sound Of Player
-            Destroy(gameObject);                         // Deleting Death Angel
+            //Destroy(gameObject);                         // Deleting Death Angel
+            transform.position = new Vector2(26, 5);        // Placing Angel Again on His Place
             CheckDeathLvlPlayer(player.position.x);
 
         }
